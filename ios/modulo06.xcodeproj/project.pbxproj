@@ -37,6 +37,20 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "modulo06-tvOS";
 		};
+		A01D049924112238001806BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A01D049424112238001806BD /* RNCWebView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNCWebView;
+		};
+		A01D049B24112238001806BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A01D049424112238001806BD /* RNCWebView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38116A3323BBECB700ACE311;
+			remoteInfo = "RNCWebView-macOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +75,7 @@
 		77D1F4111907B05BD7910899 /* libPods-modulo06-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-modulo06-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BA4C478D926EE72B035A37 /* libPods-modulo06.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-modulo06.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D76490E760F5A445CD614C /* Pods-modulo06Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modulo06Tests.release.xcconfig"; path = "Target Support Files/Pods-modulo06Tests/Pods-modulo06Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A01D049424112238001806BD /* RNCWebView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCWebView.xcodeproj; path = "../node_modules/react-native-webview/macos/RNCWebView.xcodeproj"; sourceTree = "<group>"; };
 		BD3C737BDF9B18EEBCCFB752 /* Pods-modulo06-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modulo06-tvOS.release.xcconfig"; path = "Target Support Files/Pods-modulo06-tvOS/Pods-modulo06-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BDD19F789C9CDF65FF53110C /* Pods-modulo06-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modulo06-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-modulo06-tvOS/Pods-modulo06-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BE734000842522FCF9167A3F /* Pods-modulo06-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modulo06-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-modulo06-tvOSTests/Pods-modulo06-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +167,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				A01D049424112238001806BD /* RNCWebView.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -193,6 +209,15 @@
 				00E356EE1AD99517003FC87E /* modulo06Tests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* modulo06-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* modulo06-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A01D049524112238001806BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01D049A24112238001806BD /* libRNCWebView.a */,
+				A01D049C24112238001806BD /* libRNCWebView-macOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,6 +343,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A01D049524112238001806BD /* Products */;
+					ProjectRef = A01D049424112238001806BD /* RNCWebView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* modulo06 */,
@@ -327,6 +358,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A01D049A24112238001806BD /* libRNCWebView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCWebView.a;
+			remoteRef = A01D049924112238001806BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A01D049C24112238001806BD /* libRNCWebView-macOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNCWebView-macOS.a";
+			remoteRef = A01D049B24112238001806BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
